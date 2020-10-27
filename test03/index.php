@@ -1,4 +1,5 @@
 <?php
+   require "../includes/configs.php";
    session_start();
    $user_type = $_SESSION["user_type"]; 
 ?>
@@ -20,7 +21,7 @@
 <?php include"../includes/menu.php"?>
 <hr>
 <?php
-$servername = "localhost";
+/*$servername = "localhost";
 $username = "root";
 $password = "su0214145";
 $dbname = "bbs";
@@ -30,7 +31,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
-}
+}*/
 
 $sql = "SELECT * FROM playlist order by id desc";  //選取全部資料
 //$sql = "SELECT id, message, postdate FROM nems";
@@ -50,6 +51,7 @@ $result = $conn->query($sql);
     }
 
 if ($result->num_rows > 0) {   //檢查紀錄的數量,看看是否有資料
+
     // output data of each row
 echo "<table border=0.3 width=300 bgcolor=#75ACC0>";
 if ($user_type==NULL) {
@@ -61,8 +63,15 @@ echo "<tr bgcolor=#F3CDA9 align=center><td>postdate</td></tr>";
 
 while($row = $result->fetch_assoc()) {
   $id=$row["id"]; 
-  echo "<tr bgcolor=#F3CDA9>"  ;   
-   echo "<td><a href='tvshow.php?pid=$id'>".$row["name"] ."</a></td>";
+  $name =$row["name"];
+
+  $sql ="SELECT * FROM video WHERE pid=$id";
+    $r = $conn->query($sql);
+    $video_row= $r->fetch_assoc();
+    $vid = $video_row["vid"];
+   
+   echo "<tr bgcolor=#F3CDA9>"  ;   
+   echo "<td><a href=tvshow.php?pid=$id&name=$name&vid=$vid>".$row["name"] ."</a></td>";
    if ($user_type!=NULL) {
     echo "<td>";
     echo "<a href='edit.php?id=$id'><center>Edit</center></a></td>";
