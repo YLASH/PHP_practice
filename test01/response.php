@@ -2,7 +2,7 @@
       $year = $_POST["year"] + 1911;
       $month = $_POST["month"];
       $day = $_POST["day"];
-      $birthday = "你的生日是: $year/$month/$day";
+      $birthday = "你的生日是:民國 $year/$month/$day";
 
       $mon = $month ;
       switch ($mon) {
@@ -139,6 +139,7 @@
           break;                                                
         }
     echo "<br>" ;
+  
     echo "<button><a href=https://astro.click108.com.tw/daily_". $star.".php?iAcDay=". $today. "&iAstro=".$star.">go>>你的每日運勢</a></button>";
    //astro.click108.com.tw/daily_$星座.php?iAcDay="2020-10-26"&iAstro=$星座(0~11).   
    //astro.click108.com.tw/daily_$星座.php?iAcDay=". $today. "&iAstro=$星座(0~11).   

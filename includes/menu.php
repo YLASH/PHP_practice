@@ -5,10 +5,10 @@
        exit;
      }
    $menudata = array (
-       array("name"=>"Home", "link"=>"/mysite/0903/index.php"),
-       array("name"=>"Brithday", "link"=>"/mysite/0903/test01"),
-       array("name"=>"GGGossip Broad", "link"=>"/mysite/0903/test02"),
-       array("name"=>"Myplaylist", "link"=>"/mysite/0903/test03"),
+       array("name"=>"Home", "link"=>"../index"),
+       array("name"=>"Brithday", "link"=>"../test01"),
+       array("name"=>"GGGossip Broad", "link"=>"../test02"),
+       array("name"=>"Myplaylist", "link"=>"../test03"),
        array("name"=>"NTHU", "link"=>"https://www.nthu.edu.tw/")
    );
 

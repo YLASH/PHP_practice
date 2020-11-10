@@ -15,13 +15,13 @@
 <?php  include "../includes/menu.php";?>
 <hr>
  <form method=POST action="response.php">
-     <select name=year>
+     <select name=year>民國
          <?php 
          for($i=106; $i>=40;$i--){
             echo "<option value=$i>$i</option>";
          }
           ?>
-    </select>日
+    </select>年
     <select name=month>
          <?php 
          for($i=1; $i<=12 ; $i++) {

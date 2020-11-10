@@ -2,7 +2,7 @@
    session_start();
    $user_type = $_SESSION["user_type"]; 
 ?>
-<?php include"includes/boostrap.php";
+<?php include"../includes/boostrap.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -20,7 +20,7 @@
 <body>
 <h2>YiLin PHP Practicing web</h2> 
 <hr>
-<?php include"includes/menu.php"; 
+<?php include"../includes/menu.php"; 
 ?>
 
 <hr>
@@ -55,31 +55,31 @@
 		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 		  <div class="carousel-inner">
 		    <div class="carousel-item active">
-		      <center><img src="images/image_02.jpg" class="d-block" alt="Brisbane city" height="500" ></center>
+		      <center><img src="../images/image_02.jpg" class="d-block" alt="Brisbane city" height="500" ></center>
 		    </div>
 		    <div class="carousel-item">
-		      <center><img src="images/image_03.jpg" class="d-block" alt="zucchini farm" height="500" ></center>
+		      <center><img src="../images/image_03.jpg" class="d-block" alt="zucchini farm" height="500" ></center>
 		    </div>
 		    <div class="carousel-item">
-		      <center><img src="images/image_07.jpg" class="d-block" alt="zucchini picker" height="500" ></center>
+		      <center><img src="../images/image_07.jpg" class="d-block" alt="zucchini picker" height="500" ></center>
 		    </div>
 		    <div class="carousel-item">
-		      <center><img src="images/image_08.jpg" class="d-block" alt="Bundaberg sky" height="500" ></center>
+		      <center><img src="../images/image_08.jpg" class="d-block" alt="Bundaberg sky" height="500" ></center>
 		    </div>
 		    <div class="carousel-item">
-		      <center><img src="images/image_10.jpg" class="d-block" alt="Brisbane story bridge" height="500" ></center>
+		      <center><img src="../images/image_10.jpg" class="d-block" alt="Brisbane story bridge" height="500" ></center>
 		    </div>
 		    <div class="carousel-item">
-		      <center><img src="images/image_05.jpg" class="d-block" alt="tomato picking" height="500"></center>
+		      <center><img src="../images/image_05.jpg" class="d-block" alt="tomato picking" height="500"></center>
 		    </div>
 		    <div class="carousel-item">
-		      <center><img src="images/image_06.jpg" class="d-block" alt="lomen picking" height="500"></center>
+		      <center><img src="../images/image_06.jpg" class="d-block" alt="lomen picking" height="500"></center>
 		    </div>
 		     <div class="carousel-item">
-		      <center><img src="images/image_09.jpg" class="d-block" alt="barista inter" height="500"></center>
+		      <center><img src="../images/image_09.jpg" class="d-block" alt="barista inter" height="500"></center>
 		    </div>
 		     <div class="carousel-item">
-		      <center><img src="images/image_11.jpg" class="d-block" alt="barista practicing"height="500"></center>
+		      <center><img src="../images/image_11.jpg" class="d-block" alt="barista practicing"height="500"></center>
 		    </div>
 		  </div>
 		  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
